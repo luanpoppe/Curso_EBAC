@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+}
+
+header{
+    padding: 16px 0;
+    background: #3c9b25;
+    color: rgb(0, 0, 0);
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a{
+    color: black;
+    text-decoration: none;
+}
+
+.container,
+section .container{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+#about .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body{
+    background-color: rgba(17, 27, 36, 0.15);
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+.livros_início{
+    margin-right: 32px;
+    max-width: 480px;
+}
+
+#contact .container{
+    display: block;
+}
+
+.contact_methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+form button{
+    background-color: #3c9b25;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #6ad151;
+}
+
+input:focus, textarea:focus{
+    outline-color: #3c9b25;
+}
+
+.social_links img{
+    height: 24px;
+}
+
+.social_links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social_links li a{
+    text-decoration: none;
+}
+
+#about .livros_início{
+    align-items: normal;
+}
+
+#about h2{
+    margin-top: 16px;
+}
+
+.img_livros img{
+    max-width: 120px;
+}
