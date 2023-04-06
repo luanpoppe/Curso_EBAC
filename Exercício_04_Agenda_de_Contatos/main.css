@@ -63,6 +63,7 @@ table td{
 }
 
 #mensagem_erro{
+    display: none;
     padding: 16px;
     background-color: rgba(165, 42, 42, 0.7);
     width: 50%;
