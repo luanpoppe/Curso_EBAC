@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos - EBAC</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <img src="./images/Logo_Contatos.png" alt="Logo com imagem de uma agenda de contatos">
+            <h1>Agenda de Contatos - EBAC</h1>
+        </header>
+        <form id="form">
+            <input required type="text" placeholder="Nome do contato:">
+            <input required type="tel" placeholder="Telefone do contato c/ DDD:">
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p id="mensagem_erro"></p>
+        <div class="tabela">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total de contatos:</td>
+                        <td id="numero_total_contatos"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
