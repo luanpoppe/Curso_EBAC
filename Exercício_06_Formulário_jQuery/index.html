@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário jQuery</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário de cadastro</h1>
+    </header>
+    <main>
+        <form>
+            <input type="text" placeholder="Nome Completo:" id="input_nome">
+            <input type="email" placeholder="Email:" id="input_email">
+            <input type="tel" placeholder="Telefone com DDD:" id="input_telefone">
+            <input type="text" placeholder="CPF:" id="input_CPF">
+            <input type="text" placeholder="CEP:" id="input_CEP">
+            <input type="text" placeholder="Endereço:" id="input_endereço">
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            let botão = $("button")
+            
+            $("#input_CPF").mask("000.000.000-00")
+            $("#input_CEP").mask("00000-000")
+            $("#input_telefone").mask("(00) 00000-0000")
+
+            botão.click(function(){
+                alert("Você clicou no botão de enviar")
+            })
+
+            console.log(botão.html())
+        })
+    </script>
+</body>
+</html>
