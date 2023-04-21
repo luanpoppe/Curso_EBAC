@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgba(24, 24, 173, 0.021);
+}
+
+header{
+    width: 100%;
+    background-color: rgba(24, 24, 173, 0.37);
+    padding: 8px;
+}
+
+.conteudo_header{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto 15%;
+    align-items: center;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 8px;
+    font-weight: bold;
+}
+
+#sobre_a_loja{
+    margin-top: 16px;
+    display: grid;
+    max-width: 80%;
+    margin: auto 15%;
+    grid-template-columns: 50% 50%;
+}
+
+#sobre_a_loja img{
+    max-width: 360px;
+    margin-top: 16px;
+}
+.texto_sobre_a_loja{
+    margin-top: 16px;
+}
+
+.texto_sobre_a_loja h2, #produtos h2{
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid blue;
+}
+
+.texto_sobre_a_loja p{
+    text-align: justify;
+}
+
+.todos_produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 15.5%);
+    column-gap: 9%;
+}
+
+#produtos{
+    width: 70%;
+    margin: auto 15%;
+    margin-bottom: 32px;
+}
+
+#produtos img{
+    max-width: 15.5vw;
+}
+
+#produtos p{
+    font-size: 0.9em;
+}
+
+#produtos h2{
+    margin-top: 64px;
+}
+
+#produtos p{
+    text-align: justify;
+    width: 12.5vw;
+}
+
+.todos_produtos button{
+    margin-top: 8px;
+    padding: 8px;
+    background-color: rgba(24, 24, 173, 0.37);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 641px) and (max-width:1023px){
+    #sobre_a_loja{
+        display: block;
+    }
+
+    .todos_produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        row-gap: 32px;
+    }
+
+    #produtos p{
+        text-align: justify;
+        width: 30vw;
+    }
+
+    #produtos img{
+        max-width: 30vw;
+    }
+
+}
+
+@media screen and (max-width:640px){
+    #sobre_a_loja{
+        display: block;
+    }
+
+    .todos_produtos{
+        display: block;
+    }
+
+    #produtos article{
+        padding-bottom: 32px;
+    }
+
+    #produtos p{
+        text-align: justify;
+        width: 80vw;
+    }
+
+    #produtos img{
+        max-width: 80vw;
+    }
+
+
+}
